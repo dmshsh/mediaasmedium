@@ -33,6 +33,10 @@ function renderNews(articles) {
         <img src=${article.multimedia[2].url} id="img">
         </div>
       `;
+      div.addEventListener('click', () => {
+        localStorage.setItem('selectedPost', JSON.stringify(article));
+        window.location.href = 'post.html'; 
+    });
       container.appendChild(div);
     });
 }

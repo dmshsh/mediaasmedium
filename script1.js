@@ -5,9 +5,19 @@ async function fetchNews() {
     renderNews(posts.results)
 }
 function renderNews(articles) {
+    const backButton = document.createElement('button');
+    backButton.id='backbutton'
+    backButton.addEventListener('click',()=>{
+      window.location.href='newslist.html';
+    });
+    document.body.appendChild(backButton)
     const container = document.getElementById('post-container');
     container.innerHTML = '';
-    const post=articles[0]
+    const post = JSON.parse(localStorage.getItem('selectedPost'));
+    if (!post) {
+        container.innerHTML = '<p>Post not found.</p>';
+        return;
+    }
     const isoString = post.created_date;
     const date = new Date(isoString);
     const formatted = new Intl.DateTimeFormat('en-GB', {
@@ -46,6 +56,7 @@ function renderNews(articles) {
         </div>
         <div class="custom-line"></div>
       `;
+
       container.appendChild(div);
     
 }
