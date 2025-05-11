@@ -1,0 +1,108 @@
+body{
+    background-color: rgba(241, 241, 241, 1);
+    padding: 10%;
+}
+@font-face {
+    font-family: 'bold';
+    src: url('assets/fonts/Kanit-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'regular';
+    src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+#author{
+    font-family: 'regular';
+    font-size: 0.7rem;
+}
+#descr{
+    font-family: 'regular';
+    font-size: 0.7rem;
+    opacity: 0.5;
+}
+#title{
+    font-family: 'bold';
+    font-size: 2rem;
+}
+#abstract{
+    font-family: 'regular';
+}
+#head-buttons{
+    width: 10%;
+    height: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+#linkedin{
+    width: 1rem;
+    border: none;
+    background-image: url('assets/photos/linkedin.jpg');
+    background-size:cover;
+    background-position: center;
+    height: 1rem;
+    opacity: 1;
+}
+#facebook{
+    width: 1rem;
+    border: none;
+    background-image: url('assets/photos/facebook.png');
+    background-size:200%;
+    background-position: center;
+    height: 1rem;
+    opacity: 0.5;
+}
+#twitter{
+    width: 1rem;
+    border: none;
+    background-image: url('assets/photos/instagram.png');
+    background-size:cover;
+    background-position: center;
+    height: 1rem;
+    opacity: 0.5;
+}
+#imge{
+    width: auto;
+    height: 30rem;
+}
+#subhead{
+    font-family: 'bold';
+}
+#description{
+    font-family:  'regular';
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+}
+#heart-comment{
+    display: flex;
+    justify-content: space-between;
+    width: 6rem;
+}
+#like{
+    opacity: 0.5;
+    font-family: 'regular';
+}
+#comment{
+    opacity: 0.5;
+    font-family: 'regular';
+}
+#imgsaved{
+    width: 1.5rem;
+    height: 1.5rem;
+    opacity: 0.5;
+}
+.custom-line {
+    height: 2px;
+    background-color: #999;
+    margin-top: 50px;
+    width: 100%;
+}
