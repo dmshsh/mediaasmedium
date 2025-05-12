@@ -8,7 +8,7 @@ function renderNews(articles) {
     const backButton = document.createElement('button');
     backButton.id='backbutton'
     backButton.addEventListener('click',()=>{
-      window.location.href='newslist.html';
+      window.location.href='index.html';
     });
     document.body.appendChild(backButton)
     const container = document.getElementById('post-container');
